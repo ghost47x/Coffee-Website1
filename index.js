@@ -109,5 +109,15 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
       });
     });
   });
+ // ... existing code for cart and search ...
+
+ // Mobile menu toggle
+ const menuIcon = document.getElementById('menu-icon');
+ const mobileMenu = document.querySelector('.mobile-menu');
+
+ menuIcon.addEventListener('click', () => {
+     mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+ });
+
   
 
