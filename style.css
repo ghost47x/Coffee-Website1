@@ -577,3 +577,24 @@ section {
 .box  h3{
     font-family: Lobster;
 }
+/* ... your existing styles ... */
+
+/* Mobile menu styles */
+.mobile-menu {
+    display: none; /* Hidden by default */
+}
+.mobile-menu-icon {
+    display: block; /* Show on smaller screens */
+}
+
+@media (max-width: 768px) { 
+    /* Activate mobile menu */
+    .navbar {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex; /* Show menu on mobile */
+        flex-direction: column; /* Stack links vertically */
+    }
+    /* ... other mobile-specific styles ... */
+}
